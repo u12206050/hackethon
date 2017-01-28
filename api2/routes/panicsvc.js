@@ -112,9 +112,9 @@ function soundAlarm() {
         console.error(e);
     });
 }
-
+//WARNING NEVER POST A SLACK_TOKEN OR ANY OTHER AUTH TOKEN FOR THAT MATTER TO GITHUB
 function sendSlack(args) {
-    request("https://slack.com/api/chat.postMessage?token=xoxp-108095108048-108170107008-133766850867-43cf077c44138b23beb66587e5c92f21&pretty=1&channel=C363Q8Q1X&text=" + encodeURIComponent(args.message));
+    request("https://slack.com/api/chat.postMessage?token=xoxp-xxxxxxxxxxx-xxxxxxxxxxx-xxxxxxxxxxx-xxxxxxxxxxx&pretty=1&channel=C363Q8Q1X&text=" + encodeURIComponent(args.message));
 }
 
 function sendSMS(args) {
